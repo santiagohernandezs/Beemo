@@ -3,6 +3,35 @@
   background-color: #F8F5F2;
 }
 
+navbar {
+  display : flex;
+  flex-direction : row;
+  justify-content : flex-end;
+  list-style : none;
+  padding : 1rem 1rem; 
+  background-color : #2E2B28
+}
+
+.navlinks{
+  display : flex;
+  flex-direction : row;
+  justify-content : flex-end;
+  list-style : none;
+}
+
+.link {
+  margin-right : 20px;
+  font-family: Raleway;
+  font-size: 30px;
+  color : #F8F5F2;
+  transition: color .5s;
+  cursor: pointer;
+}
+
+.link:hover{
+  color: #FFBE0B;
+}
+
 .banner {
   display : flex;
   justify-content : center;
@@ -28,6 +57,11 @@
   cursor : pointer;
   margin-right: 1rem;
   box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
+  transition: background-color .5s;
+}
+
+button:hover {
+  background-color: #FFFFFE;
 }
 
 .row {
