@@ -37,7 +37,7 @@ const Navbar = () => {
               color : '#FFBE0B',
               transition : { duration : .1 }
             }}
-            >Registro</motion.li>
+            >Registrate</motion.li>
             <motion.li 
             className='link navbar-logIn'
             initial={{color:'#F8F5F2'}}
