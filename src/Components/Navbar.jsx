@@ -1,12 +1,32 @@
-import React from 'react'
+import React from 'react';
+import { motion } from "framer-motion";
+
 
 const Navbar = () => {
   return (
     <navbar >
         <ul className='navlinks'>
-            <li className='link'>Nosotros</li>
-            <li className='link'>Precios</li>
-            <li className='link'>Contacto</li>
+            <motion.li 
+            className='link'
+            whileHover={{
+              color : '#FFBE0B',
+              transition : { duration : .1 }
+            }}
+            >Nosotros</motion.li>
+            <motion.li 
+            className='link'
+            whileHover={{
+              color : '#FFBE0B',
+              transition : { duration : .1 }
+            }}
+            >Precios</motion.li>
+            <motion.li 
+            className='link'
+            whileHover={{
+              color : '#FFBE0B',
+              transition : { duration : .1 }
+            }}
+            >Contacto</motion.li>
         </ul>
     </navbar>
   )

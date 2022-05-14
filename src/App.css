@@ -28,15 +28,19 @@ navbar {
   cursor: pointer;
 }
 
-.link:hover{
-  color: #FFBE0B;
-}
 
 .banner {
   display : flex;
   justify-content : center;
   align-items: center;
-  height : 85%
+  height : 85%;
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none; 
+  -khtml-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
+                               
 }
 
 .buttonContainer{
@@ -64,13 +68,17 @@ button:hover {
   background-color: #FFFFFE;
 }
 
-.row {
-  height : 25px;
-  display : flex;
-  justify-content : center;
-  align-content : center;
+.rowcontainer{
+  display: flex;
+  justify-content: center;
   position : relative;
-  bottom : 6rem
+  bottom : 6rem;
+}
+
+.row {
+  height : 40px;
+  width: 40px;
+  user-select: none; 
 }
 
 .icon {
@@ -79,5 +87,11 @@ button:hover {
   position: absolute;
   top : 10px;
   left : 12px;
+  color : rgba(0, 0, 0, 0.5)
+}
+
+.rowIcon{
+  height: 100%;
+  width: 100%;
   color : rgba(0, 0, 0, 0.5)
 }
