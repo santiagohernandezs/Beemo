@@ -9,10 +9,13 @@ import { FaGooglePlay, FaApple, FaChevronDown } from 'react-icons/fa'
 function App() {
   return (
     <div className="App">
+      {/* navbar component */}
       <Navbar />
+      {/* banner */}
       <div className='banner' >
         <img src={Banner} alt="logo" />
       </div>
+      {/* button container */}
       <div className='buttonContainer'>
         <motion.button
           whileHover={{
@@ -38,8 +41,7 @@ function App() {
           <FaApple className='icon' />
         </motion.button>
       </div>
-
-
+      {/* row container */}
       <div className="rowcontainer">
         <motion.div
           className='row'
@@ -52,7 +54,7 @@ function App() {
             delay : 1
           }}
         >
-          <FaChevronDown className='rowIcon'/>
+          <FaChevronDown className='rowIcon'/> {/*row icon*/}
         </motion.div>
       </div>
     </div>

@@ -1,7 +1,15 @@
+:root{
+  --main-bg-color: #F8F5F2;
+  --brown-primary: #2E2B28;
+  --shadow-primary: 4px 4px 3px rgba(0, 0, 0, 0.2);
+}
+
 .App {
   height: 100vh;
-  background-color: #F8F5F2;
+  background-color: var(--main-bg-color);
 }
+
+/* navbar styles */
 
 navbar {
   display : flex;
@@ -22,7 +30,7 @@ navbar {
 .link {
   margin-right : 20px;
   font-family: Raleway;
-  font-size: 30px;
+  font-size: 25px;
   color : #F8F5F2;
   transition: color .5s;
   cursor: pointer;
@@ -31,12 +39,14 @@ navbar {
 }
 
 .link.navbar-logIn{
-  background-color: #2E2B28;
+  background-color: var(--brown-primary);
   border-radius: 15px;
   padding: 10px;
-  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-primary);
 
 }
+
+/* banner styles */
 
 .banner {
   display : flex;
@@ -50,6 +60,8 @@ navbar {
   -ms-user-select: none; 
   user-select: none;                       
 }
+
+/* buttons styles */
 
 .buttonContainer{
   display: flex;
@@ -73,13 +85,15 @@ navbar {
   border: none;
   cursor: pointer;
   margin-right: 1rem;
-  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-primary);
   transition: background-color .5s;
 }
 
 button:hover {
   background-color: #FFFFFE;
 }
+
+/* row styles */
 
 .rowcontainer{
   display: flex;
@@ -93,6 +107,8 @@ button:hover {
   width: 40px;
   user-select: none; 
 }
+
+/* icons styles */
 
 .icon {
   height : 40px;
