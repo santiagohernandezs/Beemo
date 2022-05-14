@@ -8,8 +8,8 @@ navbar {
   flex-direction : row;
   justify-content : flex-end;
   list-style : none;
-  padding : 1rem 1rem; 
-  background-color : #2E2B28
+  padding : 2rem 1rem; 
+  background-color : transparent
 }
 
 .navlinks{
@@ -26,39 +26,52 @@ navbar {
   color : #F8F5F2;
   transition: color .5s;
   cursor: pointer;
+  font-weight: 600;
+  padding: 10px;
 }
 
+.link.navbar-logIn{
+  background-color: #2E2B28;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
+
+}
 
 .banner {
   display : flex;
   justify-content : center;
   align-items: center;
-  height : 85%;
+  height : 80%;
   -webkit-touch-callout: none; 
   -webkit-user-select: none; 
   -khtml-user-select: none; 
   -moz-user-select: none; 
   -ms-user-select: none; 
-  user-select: none; 
-                               
+  user-select: none;                       
 }
 
 .buttonContainer{
   display: flex;
   flex-direction: row;
+  position: relative;
+  bottom: 24%;
+  left: 56%;
+  width: 20rem;
+  justify-content: center;
 }
 
 .button {
-  height : 65px;
-  width : 65px;
+  height: 65px;
+  width: 65px;
   display: flex;
-  justify-content : center;
+  justify-content: center;
   position: relative;
-  bottom: 18rem;
-  left: 60.5%;
-  border-radius : 16px;
-  border : none;
-  cursor : pointer;
+  /* bottom: 18rem; */
+  /* left: 60.5%; */
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
   margin-right: 1rem;
   box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
   transition: background-color .5s;
