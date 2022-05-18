@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './Components/Navbar';
 import Banner from './assets/banner.png';
+import { StartButton } from './Components/StartButton';
 import { motion } from "framer-motion";
 import { FaGooglePlay, FaApple, FaChevronDown } from 'react-icons/fa'
 
@@ -12,53 +13,72 @@ function App() {
       {/* navbar component */}
       <Navbar />
       {/* banner */}
-      <div className='banner' >
+      <div className="banner">
         <img src={Banner} alt="logo" />
       </div>
       {/* button container */}
-      <div className='buttonContainer'>
+      <div className="buttonContainer">
         <motion.button
           whileHover={{
             scale: 1.07,
-            transition: { duration: .5 }
+            transition: { duration: 0.5 },
           }}
           onClick={() => {
-            console.log('Gplay-clicked')
+            console.log("Gplay-clicked");
           }}
-          className='button'>
-          <FaGooglePlay className='icon' />
+          className="button"
+        >
+          <FaGooglePlay className="icon" />
         </motion.button>
 
         <motion.button
           whileHover={{
             scale: 1.07,
-            transition: { duration: .5 }
+            transition: { duration: 0.5 },
           }}
           onClick={() => {
-            console.log('Apple-clicked')
+            console.log("Apple-clicked");
           }}
-          className='button'>
-          <FaApple className='icon' />
+          className="button"
+        >
+          <FaApple className="icon" />
         </motion.button>
       </div>
       {/* row container */}
       <div className="rowcontainer">
         <motion.div
-          className='row'
+          className="row"
           animate={{
-            y : [0, 25, 0]
+            y: [0, 25, 0],
           }}
           transition={{
-            repeat : Infinity,
-            duration : 4,
-            delay : 1
+            repeat: Infinity,
+            duration: 4,
+            delay: 1,
           }}
         >
-          <FaChevronDown className='rowIcon'/> {/*row icon*/}
+          <FaChevronDown className="rowIcon" /> {/*row icon*/}
         </motion.div>
       </div>
+      <div className="about">
+        <div className="textcontainer">
+          <div className="aboutTitle">
+            <h1>Nuestra Oferta</h1>
+          </div>
+        </div>
+        <div className="cards">
+          <div className="cardscontainer">
+            <div className="card"></div>
+            <div className="card"></div>
+            <div className="card"></div>
+          </div>
+        </div>
+        <div className="startButtonContainer">
+          <StartButton />
+        </div>
+        
+      </div>
     </div>
-
   );
 }
 

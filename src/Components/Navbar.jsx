@@ -46,7 +46,7 @@ const Navbar = () => {
             scale: 1.07,
             transition: { duration: .5 }
           }}
-        >Entra</motion.li>
+        >Entrar</motion.li>
       </ul>
     </navbar>
   )

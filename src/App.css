@@ -1,8 +1,10 @@
 :root{
-  --main-bg-color: #F8F5F2;
   --brown-primary: #2E2B28;
+  --white-primary: #FFFFFE;
   --shadow-primary: 4px 4px 3px rgba(0, 0, 0, 0.2);
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 .App {
   height: 100vh;
@@ -29,7 +31,7 @@ navbar {
 
 .link {
   margin-right : 20px;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 25px;
   color : #F8F5F2;
   transition: color .5s;
@@ -123,4 +125,60 @@ button:hover {
   height: 100%;
   width: 100%;
   color : rgba(0, 0, 0, 0.5)
+}
+
+.about{
+  height: 100vh;
+}
+
+.textcontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aboutTitle{
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  color: var(--brown-primary);
+}
+
+.cards{
+  display: flex;
+  justify-content: center;
+}
+
+.cardscontainer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 138px;
+  padding: 70px 10px;
+}
+
+.card{
+  width: 455px;
+  height: 406px;
+  background: red;
+  border-radius: 15px;
+}
+
+.startButtonContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.StartButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  width: 200px;
+  height: 52px;
+  font-size: large;
+  font-family: 'Raleway';
+  font-weight: bolder;
+  border-radius: 15px;
+  box-shadow: var(--shadow-primary);
 }

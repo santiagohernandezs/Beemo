@@ -4,7 +4,12 @@
 }
 
 body {
-  height: 100vh;
+  height: 500vh;
   /* overflow-y: hidden;
   overflow-x: hidden;  */
+  background-color: #F8F5F2;
+}
+
+#root{
+  height: 100%;
 }
