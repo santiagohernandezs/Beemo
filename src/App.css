@@ -142,11 +142,17 @@ button:hover {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   color: var(--brown-primary);
+  margin-top: 20px;
+}
+
+.aboutTitle > h1{
+  color: #2E2B28;
 }
 
 .cards{
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .cardscontainer{
@@ -154,12 +160,13 @@ button:hover {
   grid-template-columns: repeat(3, 1fr);
   gap: 138px;
   padding: 70px 10px;
+  margin-top: 20px;
 }
 
 .card{
   width: 455px;
   height: 406px;
-  background: red;
+  background: var(--white-primary);
   border-radius: 15px;
 }
 
@@ -181,4 +188,5 @@ button:hover {
   font-weight: bolder;
   border-radius: 15px;
   box-shadow: var(--shadow-primary);
+  color: #2E2B28;
 }
