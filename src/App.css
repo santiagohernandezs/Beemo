@@ -163,13 +163,6 @@ button:hover {
   margin-top: 20px;
 }
 
-.card{
-  width: 455px;
-  height: 406px;
-  background: var(--white-primary);
-  border-radius: 15px;
-}
-
 .startButtonContainer{
   display: flex;
   justify-content: center;
@@ -184,7 +177,7 @@ button:hover {
   width: 200px;
   height: 52px;
   font-size: large;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: bolder;
   border-radius: 15px;
   box-shadow: var(--shadow-primary);

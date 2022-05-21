@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import Banner from './assets/banner.png';
 import { StartButton } from './Components/StartButton';
+import Card from './Components/card'
 import { motion } from "framer-motion";
 import { FaGooglePlay, FaApple, FaChevronDown } from 'react-icons/fa'
 
@@ -68,15 +69,24 @@ function App() {
         </div>
         <div className="cards">
           <div className="cardscontainer">
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
+            <Card 
+            header='Lorem'
+            p = 'Hola soy un parrafo'
+            />
+            <Card 
+            header='Lorem 2'
+            p = 'Hola soy un parrafo'
+            />
+            <Card 
+            header='Lorem 3'
+            p = 'Hola soy un parrafo'
+            />
           </div>
         </div>
         <div className="startButtonContainer">
           <StartButton />
         </div>
-        
+
       </div>
     </div>
   );
