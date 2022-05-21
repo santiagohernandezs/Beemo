@@ -15,8 +15,10 @@ const card = (props) => {
         >
             <h1>{props.header}</h1>
         </div>
-        <div className="cardImageContainer">
-
+        <div className="cardImageContainer"
+        style={cardImageContainer}
+        >
+            <img src={props.svg} alt='svg'/>
         </div>
         <div className="cardParagraphContainer"
         style={cardParagraphContainer}
@@ -46,10 +48,18 @@ const cardTitleContainer = {
     justifyContent : 'center'
 }
 
+const cardImageContainer = {
+    height: '43%',
+    display: 'flex',
+    justifyContent: 'center'
+}
+
 const cardParagraphContainer = {
-    fontFamily : 'Raleway, sans-serif',
+    fontFamily: 'Raleway, sans-serif',
     color : '#2E2B28',
-    padding : '5%',
-    display : 'flex',
-    justifyContent : 'center'
+    padding: '5%',
+    display: 'flex',
+    fontWeight: 'bold',
+    justifyContent: 'center',
+    textAlign: 'justify'
 }  

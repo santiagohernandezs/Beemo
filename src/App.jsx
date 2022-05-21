@@ -1,6 +1,9 @@
 import './App.css';
 import Navbar from './Components/Navbar';
 import Banner from './assets/banner.png';
+import svg1 from '../src/assets/1.svg';
+import svg2 from '../src/assets/2.svg';
+import svg3 from '../src/assets/3.svg';
 import { StartButton } from './Components/StartButton';
 import Card from './Components/card'
 import { motion } from "framer-motion";
@@ -71,14 +74,17 @@ function App() {
           <div className="cardscontainer">
             <Card 
             header='Lorem'
+            svg = {svg1}
             p = 'Hola soy un parrafo'
             />
             <Card 
             header='Lorem 2'
+            svg = {svg2}
             p = 'Hola soy un parrafo'
             />
             <Card 
             header='Lorem 3'
+            svg = {svg3}
             p = 'Hola soy un parrafo'
             />
           </div>
