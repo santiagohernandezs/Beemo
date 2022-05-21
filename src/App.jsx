@@ -1,17 +1,15 @@
-import './App.css';
-import Navbar from './Components/Navbar';
-import Banner from './assets/banner.png';
-import svg1 from '../src/assets/1.svg';
-import svg2 from '../src/assets/2.svg';
-import svg3 from '../src/assets/3.svg';
-import { StartButton } from './Components/StartButton';
+import './App.css'
+import Navbar from './Components/Navbar'
+import Banner from './assets/banner.png'
+import svg1 from '../src/assets/1.svg'
+import svg2 from '../src/assets/2.svg'
+import svg3 from '../src/assets/3.svg'
+import { StartButton } from './Components/StartButton'
 import Card from './Components/card'
-import { motion } from "framer-motion";
-import { FaGooglePlay, FaApple, FaChevronDown } from 'react-icons/fa'
+import { motion } from 'framer-motion'
+import { FaChevronDown } from 'react-icons/fa'
 
-
-
-function App() {
+function App () {
   return (
     <div className="App">
       {/* navbar component */}
@@ -22,46 +20,22 @@ function App() {
       </div>
       {/* button container */}
       <div className="buttonContainer">
-        <motion.button
-          whileHover={{
-            scale: 1.07,
-            transition: { duration: 0.5 },
-          }}
-          onClick={() => {
-            console.log("Gplay-clicked");
-          }}
-          className="button"
-        >
-          <FaGooglePlay className="icon" />
-        </motion.button>
-
-        <motion.button
-          whileHover={{
-            scale: 1.07,
-            transition: { duration: 0.5 },
-          }}
-          onClick={() => {
-            console.log("Apple-clicked");
-          }}
-          className="button"
-        >
-          <FaApple className="icon" />
-        </motion.button>
+        <StartButton />
       </div>
       {/* row container */}
       <div className="rowcontainer">
         <motion.div
           className="row"
           animate={{
-            y: [0, 25, 0],
+            y: [0, 25, 0]
           }}
           transition={{
             repeat: Infinity,
             duration: 4,
-            delay: 1,
+            delay: 1
           }}
         >
-          <FaChevronDown className="rowIcon" /> {/*row icon*/}
+          <FaChevronDown className="rowIcon" /> {/* row icon */}
         </motion.div>
       </div>
       <div className="about">
@@ -72,17 +46,17 @@ function App() {
         </div>
         <div className="cards">
           <div className="cardscontainer">
-            <Card 
+            <Card
             header='Lorem'
             svg = {svg1}
             p = 'Hola soy un parrafo'
             />
-            <Card 
+            <Card
             header='Lorem 2'
             svg = {svg2}
             p = 'Hola soy un parrafo'
             />
-            <Card 
+            <Card
             header='Lorem 3'
             svg = {svg3}
             p = 'Hola soy un parrafo'
@@ -95,10 +69,7 @@ function App() {
 
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
-
-
-
+export default App

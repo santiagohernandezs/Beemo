@@ -1,6 +1,4 @@
-import React from 'react';
-import { motion } from "framer-motion";
-
+import { motion } from 'framer-motion'
 
 const Navbar = () => {
   return (
@@ -11,7 +9,7 @@ const Navbar = () => {
           initial={{ color: '#2E2B28' }}
           whileHover={{
             color: '#FFBE0B',
-            transition: { duration: .1 }
+            transition: { duration: 0.1 }
           }}
         >Nosotros</motion.li>
         <motion.li
@@ -19,7 +17,7 @@ const Navbar = () => {
           initial={{ color: '#2E2B28' }}
           whileHover={{
             color: '#FFBE0B',
-            transition: { duration: .1 }
+            transition: { duration: 0.1 }
           }}
         >Precios</motion.li>
         <motion.li
@@ -27,7 +25,7 @@ const Navbar = () => {
           initial={{ color: '#2E2B28' }}
           whileHover={{
             color: '#FFBE0B',
-            transition: { duration: .1 }
+            transition: { duration: 0.1 }
           }}
         >Contacto</motion.li>
         <motion.li
@@ -35,7 +33,7 @@ const Navbar = () => {
           initial={{ color: '#2E2B28' }}
           whileHover={{
             color: '#FFBE0B',
-            transition: { duration: .1 }
+            transition: { duration: 0.1 }
           }}
         >Registrate</motion.li>
         <motion.li
@@ -44,7 +42,7 @@ const Navbar = () => {
           whileHover={{
             color: '#FFBE0B',
             scale: 1.07,
-            transition: { duration: .5 }
+            transition: { duration: 0.5 }
           }}
         >Entrar</motion.li>
       </ul>
@@ -53,4 +51,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-

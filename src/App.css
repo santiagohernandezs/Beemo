@@ -181,5 +181,7 @@ button:hover {
   font-weight: bolder;
   border-radius: 15px;
   box-shadow: var(--shadow-primary);
+  background-color: var(--white-primary);
   color: #2E2B28;
+  gap: 5%;
 }
