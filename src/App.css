@@ -128,7 +128,7 @@ button:hover {
 }
 
 .about{
-  height: 100vh;
+  height: 80vh;
 }
 
 .textcontainer{
@@ -184,4 +184,22 @@ button:hover {
   background-color: var(--white-primary);
   color: #2E2B28;
   gap: 5%;
+}
+
+.misionContainer{
+  background-color: var(--white-primary);
+  height: 75vh;
+  padding: 5%;
+}
+
+.misionTitle{
+  height: 10%;
+  border: 1px solid black;
+  padding: 5%;
+}
+
+.misionp{
+  height: 10%;
+  border: 1px solid black;
+  padding: 5%;
 }

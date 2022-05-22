@@ -66,8 +66,15 @@ function App () {
         <div className="startButtonContainer">
           <StartButton />
         </div>
-
       </div>
+      <div className="misionContainer">
+          <div className="misionTitle">
+            <h1>Title</h1>
+          </div>
+          <div className="misionp">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, magnam!</p>
+          </div>
+        </div>
     </div>
   )
 }
