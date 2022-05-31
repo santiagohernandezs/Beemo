@@ -188,18 +188,27 @@ button:hover {
 
 .misionContainer{
   background-color: var(--white-primary);
-  height: 75vh;
+  height: 34vh;
   padding: 5%;
 }
 
 .misionTitle{
-  height: 10%;
+  text-align: center;
+  height: 1%;
   border: 1px solid black;
-  padding: 5%;
+  padding: 3%;
+  margin-bottom: 3%;
+  font-family: 'Raleway', sans-serif;
 }
 
 .misionp{
   height: 10%;
   border: 1px solid black;
   padding: 5%;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+footer{
+  border: 1px solid black;
 }

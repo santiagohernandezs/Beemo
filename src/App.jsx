@@ -69,12 +69,15 @@ function App () {
       </div>
       <div className="misionContainer">
           <div className="misionTitle">
-            <h1>Title</h1>
+            <h1>Misión</h1>
           </div>
           <div className="misionp">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, magnam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea alias fugit, a accusamus est corporis eveniet, quia, tenetur illo sit expedita molestias. Consequatur, suscipit corporis aliquam voluptatem esse beatae pariatur?</p>
           </div>
         </div>
+        <footer>
+          <div></div>
+        </footer>
     </div>
   )
 }
