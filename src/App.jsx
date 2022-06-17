@@ -67,13 +67,24 @@ function App () {
           <StartButton />
         </div>
       </div>
-      <div className="misionContainer">
-          <div className="misionTitle">
-            <h1>Misión</h1>
+      <div className="mvisionContainer">
+        <div className="cardContainer">
+            <div className="mvisionTitle">
+              <h1>Misión</h1>
+            </div>
+            <div className="mvisionp">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea alias fugit, a accusamus est corporis eveniet, quia, tenetur illo sit expedita molestias. Consequatur, suscipit corporis aliquam voluptatem esse beatae pariatur?</p>
+            </div>
           </div>
-          <div className="misionp">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea alias fugit, a accusamus est corporis eveniet, quia, tenetur illo sit expedita molestias. Consequatur, suscipit corporis aliquam voluptatem esse beatae pariatur?</p>
+          <div className="cardContainer">
+          <div className="mvisionTitle">
+              <h1>Misión</h1>
+            </div>
+            <div className="mvisionp">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea alias fugit, a accusamus est corporis eveniet, quia, tenetur illo sit expedita molestias. Consequatur, suscipit corporis aliquam voluptatem esse beatae pariatur?</p>
+            </div>
           </div>
+
         </div>
         <footer>
           <div></div>

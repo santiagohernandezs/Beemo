@@ -18,8 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint src/*",
-    "lint:fix": "eslint --fix  --ext .jsx"
+    "lint": "npx eslint src/**",
+    "fix": "npx eslint --fix-dry-run src/** --ext .jsx"
   },
   "eslintConfig": {
     "extends": [
@@ -40,10 +40,10 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^8.16.0",
+    "eslint": "^8.17.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.2.0",
+    "eslint-plugin-n": "^15.2.3",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.30.0"
   }

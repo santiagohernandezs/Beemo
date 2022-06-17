@@ -7,19 +7,24 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'standard',
-    'plugin:react/jsx-runtime'
+    'eslint:recommended'
   ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true
     },
-    ecmaVersion: 'latest',
-    sourceType: 'module'
+    ecmaVersion: 'latest'
+  },
+  settings: {
+    react: {
+      version: 'detect'
+    }
   },
   plugins: [
     'react'
   ],
   rules: {
-  },
-  ignorePatterns: ['src/assets']
+    'react/react-in-jsx-scope': 'off',
+    quotes: ['error', 'single']
+  }
 }

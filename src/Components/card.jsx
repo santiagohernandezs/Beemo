@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 const card = (props) => {
   return (
-    <motion.div className='card'
+    <motion.div className="card"
     style={cardStyle}
     whileHover={{
       scale: 1.07,

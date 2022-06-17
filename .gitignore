@@ -2,7 +2,7 @@
 
 # dependencies
 /node_modules
-/src/assest
+src/assest/**
 
 
 # testing
