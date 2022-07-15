@@ -1,18 +1,13 @@
-import React from 'react'
-import { motion } from 'framer-motion'
 import PropTypes from 'prop-types'
 
-const card = props => {
+export const cardStatic = props => {
     const title = props.title
     const img = props.img
     const content = props.content
     return (
-        <motion.div className="card"
+        <div
+            className="card"
             style={cardStyle}
-            whileHover={{
-                scale: 1.07,
-                transition: { duration: 0.5 }
-            }}
         >
             <div className="cardTitleContainer"
                 style={cardTitleContainer}
@@ -29,13 +24,13 @@ const card = props => {
             >
                 <p>{content}</p>
             </div>
-        </motion.div>
+        </div>
     )
 }
 
-export default card
+export default cardStatic
 
-card.propTypes = {
+cardStatic.propTypes = {
     title: PropTypes.string,
     img: PropTypes.string,
     content: PropTypes.string
