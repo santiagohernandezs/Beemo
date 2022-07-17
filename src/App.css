@@ -45,7 +45,7 @@ navbar {
   border-radius: 15px;
   padding: 10px;
   box-shadow: var(--shadow-primary);
-
+  text-decoration: none;
 }
 
 /* banner styles */
