@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  db:
+    container_name: postgres-db
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER: tao
+      POSTGRES_PASSWORD: 1441
+      POSTGRES_DB: beemo
+    ports:
+      - '8000:5432'
+    volumes:
+      - ./db_data:/var/lib/postgresql/data
