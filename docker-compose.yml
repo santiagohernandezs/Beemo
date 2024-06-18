@@ -1,5 +1,3 @@
-version: '3'
-
 services:
   db:
     container_name: postgres-db
@@ -12,4 +10,4 @@ services:
     ports:
       - '8000:5432'
     volumes:
-      - ./db_data:/var/lib/postgresql/data
+      - ./api/db_data:/var/lib/postgresql/data
