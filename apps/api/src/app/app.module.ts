@@ -1,21 +1,18 @@
-import { ApolloServerPluginLandingPageLocalDefault } from '@apollo/server/plugin/landingPage/default';
-import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
+import { ApolloDriverConfig } from '@nestjs/apollo';
 import { Module } from '@nestjs/common';
+import { ConfigModule } from '@nestjs/config';
 import { GraphQLModule } from '@nestjs/graphql';
-import { TicketsModule } from './tickets/tickets.module';
-import { TicketsResolver } from './tickets/tickets.resolver';
-import { TicketsService } from './tickets/tickets.service';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { apolloConfig, appModuleConfig, typeormConfig } from '../config/index';
+import { appModules, appProviders } from './entries/index';
 
 @Module({
   imports: [
-    GraphQLModule.forRoot<ApolloDriverConfig>({
-      driver: ApolloDriver,
-      autoSchemaFile: true,
-      playground: false,
-      plugins: [ApolloServerPluginLandingPageLocalDefault()],
-    }),
-    TicketsModule,
+    ConfigModule.forRoot(appModuleConfig),
+    GraphQLModule.forRoot<ApolloDriverConfig>(apolloConfig),
+    TypeOrmModule.forRootAsync(typeormConfig),
+    ...appModules,
   ],
-  providers: [TicketsService, TicketsResolver],
+  providers: [...appProviders],
 })
 export class AppModule {}
