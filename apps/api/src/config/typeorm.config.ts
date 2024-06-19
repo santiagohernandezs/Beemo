@@ -12,10 +12,7 @@ const config = {
     database: configService.get<string>('database.database'),
     logging: configService.get<boolean>('database.logging'),
     synchronize: configService.get<boolean>('database.synchronize'),
-    entities: [
-      __dirname + '/**/*.entity{.ts,.js}',
-      __dirname + '/**/*.view{.ts,.js}',
-    ],
+    autoLoadEntities: true,
   }),
   inject: [ConfigService],
 } satisfies TypeOrmModuleAsyncOptions;
